@@ -122,15 +122,27 @@ cd mobileCodexHelper-macos
 - `siteboon/claudecodeui`
 - 版本：`v1.25.2`
 
+注意：
+
+- 当前仓库 **不包含** `vendor/claudecodeui-1.25.2`
+- 这是有意的发布策略，用来避免把上游源码和依赖整包提交进 fork
+- 你需要自行下载或克隆上游 `claudecodeui v1.25.2`
+
 放到：
 
 ```text
 vendor/claudecodeui-1.25.2
 ```
 
-然后应用 override，并安装依赖、构建。
+然后执行：
 
-如果你是直接使用已经整理好的仓库版本，这一步通常已经包含在仓库内容中。
+```bash
+git clone --branch v1.25.2 --depth 1 https://github.com/siteboon/claudecodeui.git vendor/claudecodeui-1.25.2
+rsync -a upstream-overrides/claudecodeui-1.25.2/ vendor/claudecodeui-1.25.2/
+cd vendor/claudecodeui-1.25.2
+npm install
+npm run build
+```
 
 ### 3. 启动本地服务
 
