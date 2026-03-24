@@ -1,5 +1,12 @@
 # mobileCodexHelper-macos
 
+![Platform](https://img.shields.io/badge/platform-macOS-black)
+![Remote Access](https://img.shields.io/badge/remote-Tailscale%20%7C%20LAN-0ea5e9)
+![Security](https://img.shields.io/badge/security-device%20approval%20enabled-16a34a)
+![Mode](https://img.shields.io/badge/mode-single--user-orange)
+
+这是一个基于原始 `mobileCodexHelper` Windows 思路演化出的 macOS 版本。它让你在 Mac 上运行本地 Codex，并通过手机浏览器在局域网或 Tailscale 私网中继续查看会话、发送消息和控制执行，同时保留首次设备审批与单用户私有安全边界。
+
 把你 Mac 上本地运行的 Codex，会话化成一个可以在手机上访问和继续控制的私有网页面板。
 
 这是基于原始 `mobileCodexHelper` Windows 方案演化出来的 **macOS 版本**。  
